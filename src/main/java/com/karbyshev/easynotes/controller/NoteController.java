@@ -46,6 +46,7 @@ public class NoteController {
 
         note.setTitle(noteDetails.getTitle());
         note.setContent(noteDetails.getContent());
+        note.setImage(noteDetails.getImage());
 
         Note updatedNote = noteRepository.save(note);
         return updatedNote;
